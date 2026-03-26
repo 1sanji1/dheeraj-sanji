@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dheeraj Sanji</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px;
+      }
+
+      .card {
+        background: white;
+        padding: 25px;
+        border-radius: 16px;
+        text-align: center;
+        width: 100%;
+        max-width: 480px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        animation: fadeIn 0.8s ease-in-out;
+      }
+
+      h1 {
+        margin-bottom: 10px;
+        font-size: 24px;
+      }
+
+      .intro {
+        font-size: 15px;
+        margin-bottom: 15px;
+        line-height: 1.4;
+        color: #444;
+      }
+
+      .highlight {
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 6px 0;
+        font-size: 14px;
+        color: #444;
+      }
+
+      .btn {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 14px;
+        background: #667eea;
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        font-size: 16px;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn:hover {
+        background: #5a67d8;
+      }
+
+      .links {
+        margin-top: 15px;
+      }
+
+      .links a {
+        display: block;
+        padding: 12px;
+        margin: 6px 0;
+        background: #f5f5f5;
+        border-radius: 8px;
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        word-break: break-all;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @media (min-width: 768px) {
+        .btn {
+          display: inline-block;
+          width: auto;
+          margin: 10px 5px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="card">
+      <h1>Hey there 👋</h1>
+
+      <div class="intro">
+        I’m <span class="highlight">Dheeraj Sanji</span>, an
+        <span class="highlight">Early Career Software Engineer</span>
+        focused on backend development, microservices, and cloud-based
+        applications.
+      </div>
+
+      <p>Thanks for scanning!</p>
+      <p>Check out my resume below 👇</p>
+
+      <!-- Buttons -->
+      <div>
+        <a href="Dheeraj-Sanji-Resume.pdf" class="btn" download>
+          ⬇ Download Resume
+        </a>
+
+        <a href="Dheeraj-Sanji-Resume.pdf" target="_blank" class="btn">
+          👀 Preview Resume
+        </a>
+      </div>
+
+      <!-- Contact -->
+      <div class="links">
+        <a href="https://www.linkedin.com/in/dheeraj-sanji/" target="_blank">
+          🔗 Connect with me on LinkedIn
+        </a>
+
+        <a href="mailto:dheerajsanji123@gmail.com">
+          📧 Reach out to me at: dheerajsanji123@gmail.com
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
