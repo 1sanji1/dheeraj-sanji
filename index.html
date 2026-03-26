@@ -83,6 +83,15 @@
         color: #333;
         text-decoration: none;
         font-weight: bold;
+      }
+
+      .email-box {
+        margin-top: 5px;
+        padding: 12px;
+        background: #eef2ff;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
         word-break: break-all;
       }
 
@@ -139,9 +148,20 @@
         </a>
 
         <a href="mailto:dheerajsanji123@gmail.com">
-          📧 Reach out to me at: dheerajsanji123@gmail.com
+          📧 Reach out to me via Email
         </a>
+
+        <div class="email-box" onclick="copyEmail()">
+          dheerajsanji123@gmail.com 📋
+        </div>
       </div>
     </div>
+
+    <script>
+      function copyEmail() {
+        navigator.clipboard.writeText("dheerajsanji123@gmail.com");
+        alert("Email copied to clipboard!");
+      }
+    </script>
   </body>
 </html>
